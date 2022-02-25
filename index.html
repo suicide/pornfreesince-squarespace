@@ -6,25 +6,107 @@
   <title></title>
   <script src="/s/countdown.min.js"></script>
   <script src="/s/freecounter.js"></script>
+  <link rel="stylesheet" href="/s/pornfree.css">
 
   <script>
     window.onload = () => {
-      let block = document.getElementById("block-462592b5caa94f628491");
-      let h1s = block.querySelectorAll("h1");
-      let dateEl = h1s[1];
+      function inIframe() {
+        try {
+          return window.self !== window.top;
+        } catch (e) {
+          return true;
+        }
+      }
 
-      freeSince(dateEl);
+      if (!inIframe()) {
+
+        const block = document.getElementById("block-yui_3_17_2_1_1645679170471_4822");
+        const dateEl = block.querySelector("h2");
+
+        const targetSelectFunc = id => {
+          const block = document.getElementById(id);
+          if (block) {
+
+            return block.querySelector("h2");
+          }
+          return null;
+        };
+
+        const counterEl = {
+          years: "block-yui_3_17_2_1_1645584044607_21441",
+          months: "block-yui_3_17_2_1_1645584044607_8294",
+          days: "block-yui_3_17_2_1_1645584044607_10394",
+          hours: "block-yui_3_17_2_1_1645584044607_12434",
+          minutes: "block-yui_3_17_2_1_1645584044607_14695",
+          seconds: "block-yui_3_17_2_1_1645584044607_16914"
+        }
+
+        freeSince(dateEl, counterEl, targetSelectFunc);
+      }
     };
   </script>
 
 </head>
 
 <body>
-
-  <div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-462592b5caa94f628491">
+  <div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1645679170471_4822">
     <div class="sqs-block-content">
-      <h1 style="white-space:pre-wrap;">I’m porn-free since:</h1>
-      <h1 style="white-space:pre-wrap;">08/10/2021</h1>
+      <h2 style="white-space:pre-wrap;">08/22/2021</h2>
+    </div>
+  </div>
+  <div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1645584044607_53656">
+    <div class="sqs-block-content">
+      <h4 style="white-space:pre-wrap;">That is:</h4>
+    </div>
+  </div>
+  <div class="row sqs-row">
+    <div class="col sqs-col-2 span-2">
+      <div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1645584044607_21441">
+        <div class="sqs-block-content">
+          <p class="" style="white-space:pre-wrap;">Years</p>
+          <h2 style="white-space:pre-wrap;">01</h2>
+        </div>
+      </div>
+    </div>
+    <div class="col sqs-col-2 span-2">
+      <div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1645584044607_8294">
+        <div class="sqs-block-content">
+          <p class="" style="white-space:pre-wrap;">Months</p>
+          <h2 style="white-space:pre-wrap;">02</h2>
+        </div>
+      </div>
+    </div>
+    <div class="col sqs-col-2 span-2">
+      <div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1645584044607_10394">
+        <div class="sqs-block-content">
+          <p class="" style="white-space:pre-wrap;">Days</p>
+          <h2 style="white-space:pre-wrap;">22</h2>
+        </div>
+      </div>
+    </div>
+    <div class="col sqs-col-2 span-2">
+      <div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1645584044607_12434">
+        <div class="sqs-block-content">
+          <p class="" style="white-space:pre-wrap;">Hours</p>
+          <h2 style="white-space:pre-wrap;">11</h2>
+        </div>
+      </div>
+    </div>
+    <div class="col sqs-col-2 span-2">
+      <div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1645584044607_14695">
+        <div class="sqs-block-content">
+          <p class="" style="white-space:pre-wrap;">Minutes</p>
+          <h2 style="white-space:pre-wrap;">33</h2>
+        </div>
+      </div>
+    </div>
+    <div class="col sqs-col-2 span-2">
+      <div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1645584044607_16914">
+        <div class="sqs-block-content">
+          <p class="" style="white-space:pre-wrap;">Seconds</p>
+          <h2 style="white-space:pre-wrap;">55</h2>
+        </div>
+      </div>
     </div>
   </div>
 
